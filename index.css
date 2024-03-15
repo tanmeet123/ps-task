@@ -11,9 +11,14 @@ td {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-
+ul{
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 li{
-  margin: 5px;
+  padding: 8px;
+  margin: 2px;
 }
 
 th {
@@ -24,7 +29,7 @@ caption {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
-  
+ 
 }
 
 a {
