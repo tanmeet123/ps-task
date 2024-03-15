@@ -1,7 +1,6 @@
 table {
   width: 100%;
-  border-collapse: collapse;
-  border-radius: 10px;
+  border-radius: 5px; 
   overflow: hidden; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
@@ -21,4 +20,18 @@ caption {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
+  
+}
+
+a {
+  color: crimson; 
+}
+
+th {
+  background-color: #5BADFA; 
+  color: white; 
+}
+
+tr:hover {
+  background-color: #f2f2f2; 
 }
