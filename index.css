@@ -1,7 +1,9 @@
-
 table {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures rounded corners are applied properly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 th,
