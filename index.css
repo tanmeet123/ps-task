@@ -12,6 +12,10 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
+li{
+  margin: 5px;
+}
+
 th {
   background-color: #f2f2f2;
 }
