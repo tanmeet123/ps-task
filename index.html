@@ -5,152 +5,260 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activity-Tracker</title>
     <link rel="stylesheet" href="index.css" />
+    <script>
+      function switchPage(page) {
+        document.getElementById('table-page').className = 'hidden';
+        document.getElementById('minutes-page').className = 'hidden';
+        document.getElementById(page).className = '';
+      }
+    </script>
   </head>
   <body>
-    <table>
-      <caption>
-        Tanmeet Kaur - Activity Tracker
-      </caption>
-      <tr>
-        <th>Date</th>
-        <th>Learning</th>
-        <th>Reference(s)</th>
-      </tr>
-      <tr>
-        <td className="date">14-03-2024</td>
-        <td>Learnt how to host a webpage using github</td>
-        <td>
-          <a href="https://docs.github.com/en/pages/quickstart"
-            >Quickstart Guide</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td className="date">14-03-2024</td>
-        <td>Learnt about Salesforce, its working and benefits</td>
-        <td>
-          <a href="https://www.youtube.com/watch?v=I3Dk3i4GpU8"
-            >Salesforce youtube video</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td className="date">15-03-2024</td>
-        <td>
-          Learnt about Salesforce architechture, services offered by Salesforce
-          and its building blocks
-        </td>
-        <td>
-          <a href="https://www.youtube.com/watch?v=I3Dk3i4GpU8"
-            >Salesforce youtube video</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td className="date">15-03-2024</td>
-        <td>
-          <ul>
+    <h1 class="name">Tanmeet Kaur</h1>
+    <div class="button-container">
+      <button onclick="switchPage('table-page')">Activity Tracker</button>
+      <button onclick="switchPage('minutes-page')">Minutes of Meeting</button>
+    </div>
+    <div id="table-page">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Learning</th>
+          <th>Reference(s)</th>
+        </tr>
+        <tr>
+          <td class="date">14-03-2024</td>
+          <td>Learnt how to host a webpage using github</td>
+          <td>
+            <a href="https://docs.github.com/en/pages/quickstart"
+              >Quickstart Guide</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="date">14-03-2024</td>
+          <td>Learnt about Salesforce, its working and benefits</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=I3Dk3i4GpU8"
+              >Salesforce youtube video</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="date">15-03-2024</td>
+          <td>
+            Learnt about Salesforce architechture, services offered by
+            Salesforce and its building blocks
+          </td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=I3Dk3i4GpU8"
+              >Salesforce youtube video</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="date">15-03-2024</td>
+          <td>
+            <ul>
+              <li>
+                Explored various standard objects in Salesforce like Lead,
+                Opportunitie, Account and Contact
+              </li>
+              <li>
+                Understood the significance of objects in organizing and storing
+                data
+              </li>
+              <li>Learned about relationships between those objects</li>
+              <li>Discussed real-world examples for the concepts</li>
+              <li>Got SOQL hands-on on Salesforce inspector</li>
+            </ul>
+          </td>
+          <td>
+            Session from Udhay Kumar Vr, Senior Manager Technology at Publicis
+            Sapient, in Salesforce Meeting
+          </td>
+        </tr>
+        <tr>
+          <td class="date">16-03-2024</td>
+          <td>
+            <li>Practiced SOQL with different operators and clause</li>
             <li>
-              Explored various standard objects in Salesforce like Lead,
-              Opportunitie, Account and Contact
+              Understood how to write relationship queries in SOQL using parent
+              to child and child to parent relation
+            </li>
+          </td>
+          <td>
+            <a href="//youtu.be/kw6SFQWQ11Q?feature=shared"
+              >SOQL Crashcourse youtube video</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="date">17-03-2024</td>
+          <td>
+            <li>
+              Got overview of Salesforce dashboard, how to create objects and
+              tabs and hands-on to convert a lead using UI
+            </li>
+            <li>Got basic understanding of visualforce and apex</li>
+          </td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=I3Dk3i4GpU8"
+              >Salesforce youtube video</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="date">18-03-2024</td>
+          <td>
+            <li>Got overview of Apex, its benefits and working</li>
+            <li>Practiced a little apex on developer console</li>
+          </td>
+          <td>
+            <li>
+              <a
+                href="https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref"
+                >Apex reference guide</a
+              >
             </li>
             <li>
-              Understood the significance of objects in organizing and storing
-              data
+              <a href="https://youtu.be/xryZh3M4oMs?feature=shared"
+                >Apex youtube video</a
+              >
             </li>
-            <li>Learned about relationships between those objects</li>
-            <li>Discussed real-world examples for the concepts</li>
-            <li>Got SOQL hands-on on Salesforce inspector</li>
-          </ul>
-        </td>
-        <td>
-          Session from Udhay Kumar Vr, Senior Manager Technology at Publicis
-          Sapient, in Salesforce Meeting
-        </td>
-      </tr>
-      <tr>
-        <td className="date">16-03-2024</td>
-        <td>
-          <li>Practiced SOQL with different operators and clause</li>
-          <li>
-            Understood how to write relationship queries in SOQL using parent to
-            child and child to parent relation
-          </li>
-        </td>
-        <td>
-          <a href="//youtu.be/kw6SFQWQ11Q?feature=shared"
-            >SOQL Crashcourse youtube video</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td className="date">17-03-2024</td>
-        <td>
-          <li>
-            Got overview of Salesforce dashboard, how to create objects and tabs
-            and hands-on to convert a lead using UI
-          </li>
-          <li>Got basic understanding of visualforce and apex</li>
-        </td>
-        <td>
-          <a href="https://www.youtube.com/watch?v=I3Dk3i4GpU8"
-            >Salesforce youtube video</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td className="date">18-03-2024</td>
-        <td>
-          <li>Got overview of Apex, its benefits and working</li>
-          <li>Practiced a little apex on developer console</li>
-        </td>
-        <td>
-          <li>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">19-03-2024</td>
+          <td>
+            <li>Hands-on on insert queries in apex</li>
+            <li>Practiced creating trigger in apex</li>
+          </td>
+          <td>
             <a
               href="https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref"
               >Apex reference guide</a
             >
-          </li>
-          <li>
-            <a href="https://youtu.be/xryZh3M4oMs?feature=shared"
-              >Apex youtube video</a
+          </td>
+        </tr>
+        <tr>
+          <td class="date">20-03-2024</td>
+          <td>Practiced DML in Apex and tried using Triggers using the same</td>
+          <td>
+            <a
+              href="https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref"
+              >Apex reference guide</a
             >
-          </li>
-        </td>
-      </tr>
-      <tr>
-        <td className="date">19-03-2024</td>
-        <td>
-          <li>Hands-on on insert queries in apex</li>
-          <li>Practiced creating trigger in apex</li>
-        </td>
-        <td>
-          <a
-            href="https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref"
-            >Apex reference guide</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td className="date">20-03-2024</td>
-        <td>Practiced DML in Apex and tried using Triggers using the same</td>
-        <td>
-          <a
-            href="https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref"
-            >Apex reference guide</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td className="date">21-03-2024</td>
-        <td>followed some courses on trailhead like Apex, SOQL, Apex Triggers</td>
-        <td>
-          <a
-            href="https://trailhead.salesforce.com/"
-            >Trailhead</a
-          >
-        </td>
-      </tr>
-    </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">21-03-2024</td>
+          <td>
+            followed some courses on trailhead like Apex, SOQL, Apex Triggers
+          </td>
+          <td>
+            <a href="https://trailhead.salesforce.com/">Trailhead</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="minutes-page" class="hidden">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td class="Date">19-03-2024</td>
+          <td>
+            <b>Question 1:</b> Create 2 accounts and perform the following
+            tasks:
+            <br />
+            Each account, create 2 contacts. For each account, create 3
+            opportunities with the following conditions:
+
+            <ul>
+              <li>
+                For the first account, set 1 opportunity as lost and 2 as
+                closed-won.
+              </li>
+              <li>
+                For the second account, assign the opportunities to random
+                stages such as prospecting, negotiation, and qualification.
+              </li>
+              <li>
+                Update the stage names of the opportunities for the second
+                account by replacing the current stage with another stage for
+                all 3 opportunities.
+              </li>
+              <li>Verify all the changes made using SOQL.</li>
+            </ul>
+            <b>Question 2:</b> - Utilize Apex to create a lead. - Access the CRM
+            UI, convert the lead, and then use SOQL to confirm if the account,
+            contacts, and opportunity associated with the lead have been
+            created. <br>
+            <b>Question 3:</b> - Implement an after-insert trigger to
+            automatically create 2 contacts by default whenever a new account is
+            created. <br>
+            <b>Topics covered:</b>
+            <ol>
+              <li>Apex programming</li>
+              <li>Account and contact insertion</li>
+              <li>Lead conversion</li>
+              <li>After-insert trigger</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td class="Date">22-03-2024</td>
+          <td>
+            <b>Scenario Question:</b><br />
+            You have been given a task to automate a process in Salesforce. Upon
+            creating a new account, the system should automatically generate two
+            contacts. Additionally, three opportunities need to be created with
+            specific names: Opp-A1-1, Opp-A1-2, and Opp-A1-3. The opportunities
+            have three status options: Initial, In Progress, and Final. "In
+            Progress" represents 75% completion, and "Final" indicates 100%
+            completion.<br /><br />
+
+            Your objective is to implement a validation rule that triggers when
+            the status of an opportunity is changed from "In Progress" to
+            "Initial." The validation rule should display an error message to
+            prevent this transition from occurring prematurely.<br /><br />
+
+            Outline the steps you would take to create and implement this
+            validation rule, ensuring that it aligns with the specified criteria
+            and error messaging requirements.
+          </td>
+        </tr>
+        <tr>
+          <td class="Date">22-03-2024</td>
+          <td>
+            <ul>
+              <li>Do's</li>
+              <ol>
+                <li>Design principle - name is prefixed with account name</li>
+                <li>Call class handler inside a trigger</li>
+                <li>Always create a method for re-occuring code</li>
+                <li>
+                  Write as minimal apex as possible and use already available
+                  and in-built features
+                </li>
+                <li>Can write comments to increase readability</li>
+                <li>Use Validation Rules in Object Manager</li>
+              </ol>
+              <li>Don't's</li>
+              <ol>
+                <li>
+                  Don't create custom objects and custom fields as they come
+                  with a cost
+                </li>
+                <li>Don't hard code probability (contributes to deal value)</li>
+              </ol>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
